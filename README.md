@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**All Campuses and Students (21/57)**
+Frontend (React-Redux, React, and React Router)
 
-## Available Scripts
+- [ ] Write a campuses sub-reducer to manage campuses in your Redux store
+- [ ] Write a students sub-reducer to manage students in your Redux store
 
-In the project directory, you can run:
+- [ ] Write a component to display a list of all campuses (just their names and images)
+- [ ] Write a component to display a list of all students (just their names)
+- [ ] Display the all-campuses component when the url matches `/campuses`
+- [ ] Display the all-students component when the url matches `/students`
+- [ ] Add links to the navbar that can be used to navigate to the all-campuses view and the all-students view
 
-### `npm start`
+**Single Student and Single Campus (14/57)**
+Frontend (React and React Router)
+- [ ] Write a component to display a single campus with the following information:
+  - [ ] The campus's name, image, address and description
+  - [ ] A list of the names of all students in that campus (or a helpful message if it doesn't have any students)
+- [ ] Display the appropriate campus's info when the url matches `/campuses/:campusId`
+- [ ] Clicking on a campus from the all-campuses view should navigate to show that campus in the single-campus view
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [ ] Write a component to display a single student with the following information:
+  - [ ] The student's full name, email, image, and gpa
+  - [ ] The name of their campus (or a helpful message if they don't have one)
+- [ ] Display the appropriate student when the url matches `/students/:studentId`
+- [ ] Clicking on a student from the all-students view should navigate to show that student in the single-student view
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- [ ] Clicking on the name of a student in the single-campus view should navigate to show that student in the single-student view
+- [ ] Clicking on the name of a campus in the single-student view should navigate to show that campus in the single-campus view
 
-### `npm test`
+**Adding a Campus and Adding a Student (12/57)**
+Frontend (React and React Router)
+- [ ] Write a component to display a form for adding a new campus that contains inputs for _at least_ the name and address.
+- [ ] Display this component EITHER as part of the all-campuses view, or as its own view
+- [ ] Submitting the form with a valid name/address should:
+  - [ ] Make an AJAX request that causes the new campus to be persisted in the database
+  - [ ] Add the new campus to the list of campuses without needing to refresh the page
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ ] Write a component to display a form for adding a new student that contains inputs for _at least_ first name, last name and email
+- [ ] Display this component EITHER as part of the all-students view, or as its own view
+- [ ] Submitting the form with a valid first name/last name/email should:
+  - [ ] Make an AJAX request that causes the new student to be persisted in the database
+  - [ ] Add the new student to the list of students without needing to refresh the page
 
-### `npm run build`
+**Removing a Campus and Removing a Student (10/57)**
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend (React and Axios/Fetch)
+- [ ] In the all-campuses view, include an `X` button next to each campus
+- [ ] Clicking the `X` button should:
+  - [ ] Make an AJAX request that causes that campus to be removed from database
+  - [ ] Remove the campus from the list of campuses without needing to refresh the page
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- [ ] In the all-students view, include an `X` button next to each student
+- [ ] Clicking the `X` button should:
+  - [ ] Make an AJAX request that causes that student to be removed from database
+  - [ ] Remove the student from the list of students without needing to refresh the page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
