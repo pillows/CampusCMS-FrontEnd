@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import ZipCodeFetch from "./zipcode";
-import CityFetch from "./city";
+import './navbar.css'
 
 function Index() {
     return (
@@ -12,12 +11,12 @@ function Index() {
           <ul className='inline'>
             <li>
               <button>
-                <Link to="/City/">City</Link>
+                <Link to="/Student/">Student</Link>
               </button>
             </li>
             <li>
               <button>
-              <Link to="/ZipCode/">ZipCode</Link>
+              <Link to="/Campus/">Campus</Link>
               </button>
             </li>
           </ul>
@@ -38,17 +37,17 @@ function AppRouter() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/City/">City</Link>
+              <Link to="/Student/">Student</Link>
             </li>
             <li>
-              <Link to="/ZipCode/">ZipCode</Link>
+              <Link to="/Campus/">Campus</Link>
             </li>
           </ul>
         </nav>
 
         <Route path="/" exact component={Index} />
-        <Route path="/City/" component={CityFetch} />
-        <Route path="/ZipCode/" component={ZipCodeFetch} />
+        <Route path="/Student/" component={Index} />
+        <Route path="/Campus/" component={Index} />
       </div>
     </Router>
   );
