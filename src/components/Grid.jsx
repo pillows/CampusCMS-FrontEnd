@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "./Card.jsx";
 import cdata from "../carddata.json";
-import "../styles/Card.css";
+import "../css/Card.css";
 
 class Grid extends Component {
   constructor(props) {
