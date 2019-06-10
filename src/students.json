@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "firstname": "Beyonce ",
+        "lastname": "Knowles",
+        "email": "whatever@whatever.com",
+        "GPA": "4.0",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+        "campus": 1
+    },
+
+    {
+        "id": 2,
+        "firstname": "Marjan ",
+        "lastname": "Ansar", 
+        "email": "marjan@gmail.com",
+        "GPA": "3.5",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+        "campus": 5
+    },
+
+    {
+        "id": 3,
+        "firstname": "FirstName ",
+        "lastname": "LastName", 
+        "email": "firstname@lastname.com",
+        "GPA": "1.0",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+        "campus": 5
+    },
+
+    {
+        "id": 4,
+        "firstname": "OK",
+        "lastname": "KO", 
+        "email": "something@fweqjkniuw.com",
+        "GPA": "5.0",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+        "campus": 3
+    },
+
+    {
+        "id": 5,
+        "firstname": "Boba",
+        "lastname": "Tea", 
+        "email": "rwlqweq@eqwesd.com",
+        "GPA": "4.0",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+        "campus": 2
+    },
+
+    {
+        "id": 6,
+        "firstname": "Jane",
+        "lastname": "Doe", 
+        "email": "default@name.com",
+        "GPA": "2.0",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+        "campus": 1
+    }
+
+]
