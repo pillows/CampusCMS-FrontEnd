@@ -13,8 +13,6 @@ class Home extends Component {
     return (
       <div>
         <Grid />
-        <CampusListing />
-        <Students />
       </div>
     );
   }

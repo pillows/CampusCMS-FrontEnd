@@ -11,8 +11,12 @@ class CampusListing extends Component {
     const { campuses, students } = this.props;
     return (
       <div>
+        Redux Campus:
         {campuses}
+        <br />
+        Redux Student:
         {students}
+        <br />
       </div>
     );
   }
