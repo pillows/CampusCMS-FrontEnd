@@ -1,0 +1,2 @@
+node-sass --include-path scss ./src/scss/navbar.scss ./src/css/navbar.css
+node-sass --include-path scss ./src/scss/Card.scss ./src/css/Card.css
