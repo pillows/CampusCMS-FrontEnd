@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import '../css/navbar.css'
+import "../css/navbar.css";
 
 function Index() {
-    return (
-        <div className="CardContainer">
-        <h2>Pages</h2>
-        <div className='wrapper wrapper-home'>
-          <div className='inner-card-div'>
-          <ul className='inline'>
+  return (
+    <div className="CardContainer">
+      <h2>Pages</h2>
+      <div className="wrapper wrapper-home">
+        <div className="inner-card-div">
+          <ul className="inline">
             <li>
               <button>
                 <Link to="/Student/">Student</Link>
@@ -16,16 +16,15 @@ function Index() {
             </li>
             <li>
               <button>
-              <Link to="/Campus/">Campus</Link>
+                <Link to="/Campus/">Campus</Link>
               </button>
             </li>
           </ul>
-          </div>
         </div>
+      </div>
     </div>
-    );
+  );
 }
-
 
 function AppRouter() {
   return (
@@ -54,4 +53,3 @@ function AppRouter() {
 }
 
 export default AppRouter;
-
