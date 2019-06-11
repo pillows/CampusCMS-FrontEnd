@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "../css/navbar.css";
+import Home from "./Home";
+import Students from "./Students";
+import CampusListing from "./CampusListing";
 
 function Index() {
   return (
@@ -43,10 +46,9 @@ function AppRouter() {
             </li>
           </ul>
         </nav>
-
-        <Route path="/" exact component={Index} />
-        <Route path="/Student/" component={Index} />
-        <Route path="/Campus/" component={Index} />
+        <Route path="/" exact component={Home} />
+        <Route path="/Student/" component={Students} />
+        <Route path="/Campus/" component={CampusListing} />
       </div>
     </Router>
   );
