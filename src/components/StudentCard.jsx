@@ -1,33 +1,33 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "../styles/Card.css";
+import "../css/Card.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-class Card extends Component {
+class StudentCard extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
   render() {
-    const { name, number, img, description, work } = this.props;
+    const { firstname, lastname, GPA, email, campus, img } = this.props;
     return (
       <div className="cardbox">
-        <img src={img} />
+        <img src={img} className="card-image" />
         <div className="card-text">
-          <h3>{name}</h3>
+          <h3>{firstname +" "+ lastname}</h3>
           <ul>
-            <li>{number}</li>
-            <li>{description}</li>
-            <li>{work}</li>
+            <li>{GPA}</li>
+            <li>{email}</li>
+            <li>{campus}</li>
           </ul>
-          <Router>
+          {/* <Router>
             <Link to="/Campus">View</Link>
-          </Router>
+          </Router> */}
         </div>
       </div>
     );
   }
 }
 
-export default Card;
+export default StudentCard;

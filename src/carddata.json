@@ -3,8 +3,10 @@
     "name": "West",
     "number": "0000000000",
     "description": "gthsrhs",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
-    "work": "34425636522"
+    "number": 123,
+      "work": "34425636522",
+    "img": "https://i.stack.imgur.com/E31eym.gif",
+    "students": [1, 6]
   },
   {
     "name": "North",
