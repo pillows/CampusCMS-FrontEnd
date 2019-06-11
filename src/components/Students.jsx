@@ -17,15 +17,13 @@ class Students extends Component {
 
   render() {
     let cards = this.state.data.map(card => (
-      <div>
-        <StudentCard
-          firstname={card.firstname}
-          lastname={card.lastname}
-          img={card.img}
-          GPA={card.GPA}
-          email={card.email}
-        />
-      </div>
+      <StudentCard
+        firstname={card.firstname}
+        lastname={card.lastname}
+        img={card.img}
+        GPA={card.GPA}
+        email={card.email}
+      />
     ));
     return <div className="card-container">{cards}</div>;
   }

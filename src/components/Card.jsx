@@ -10,7 +10,7 @@ class Card extends Component {
   }
 
   render() {
-    const { name, number, img, description, work } = this.props;
+    const { name, number, img, description, work, id } = this.props;
     return (
       <div class="cardbox">
         <img src={img} className="card-image" />
@@ -20,7 +20,7 @@ class Card extends Component {
           <h3>{description}</h3>
           <h3>{work}</h3>
           <Router>
-            <Link to="/Campus">View</Link>
+            <Link to="/viewcampus/">View</Link>
           </Router>
         </div>
       </div>

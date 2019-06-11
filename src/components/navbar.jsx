@@ -4,6 +4,7 @@ import "../css/navbar.css";
 import Home from "./Home";
 import Students from "./Students";
 import CampusListing from "./CampusListing";
+import ViewCampus from "./ViewCampus";
 
 function Index() {
   return (
@@ -49,6 +50,7 @@ function AppRouter() {
         <Route path="/" exact component={Home} />
         <Route path="/Student/" component={Students} />
         <Route path="/Campus/" component={CampusListing} />
+        <Route path="/viewcampus/" component={ViewCampus} />
       </div>
     </Router>
   );
