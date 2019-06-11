@@ -15,7 +15,7 @@ class Campus extends Component {
   }
   render() {
     let cards = this.state.data.map(card => (
-      <div>
+      <div className="cardbox">
         <Card
           name={card.name}
           number={card.number}
