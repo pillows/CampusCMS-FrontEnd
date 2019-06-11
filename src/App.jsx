@@ -8,11 +8,7 @@ import { BrowserRouter, Route, Redirect } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <div>
-        <AppRouter />
-
-        <div className="" />
-      </div>
+      <AppRouter /> 
     </div>
   );
 }

@@ -15,9 +15,7 @@ class StudentCard extends Component {
       <div class="cardbox">
         <img src={img} className="card-image" />
         <div className="card-text">
-          <h3>{firstname}</h3>
-          <h3>{lastname}</h3>
-          <h3>{GPA}</h3>
+          <h3>{firstname}{lastname}</h3>
           <h3>{email}</h3>
           <h3>{campus}</h3>
 

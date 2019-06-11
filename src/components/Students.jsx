@@ -24,6 +24,7 @@ class Students extends Component {
           img={card.img}
           GPA={card.GPA}
           email={card.email}
+          campus={card.campus}
         />
       </div>
     ));

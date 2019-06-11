@@ -5,29 +5,29 @@ import Home from "./Home";
 import Students from "./Students";
 import CampusListing from "./CampusListing";
 
-function Index() {
-  return (
-    <div className="CardContainer">
-      <h2>Pages</h2>
-      <div className="wrapper wrapper-home">
-        <div className="inner-card-div">
-          <ul className="inline">
-            <li>
-              <button>
-                <Link to="/Student/">Student</Link>
-              </button>
-            </li>
-            <li>
-              <button>
-                <Link to="/Campus/">Campus</Link>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
+// function Index() {
+//   return (
+//     <div className="CardContainer">
+//       <h2>Pages</h2>
+//       <div className="wrapper wrapper-home">
+//         <div className="inner-card-div">
+//           <ul className="inline">
+//             <li>
+//               <button>
+//                 <Link to="/Student/">Student</Link>
+//               </button>
+//             </li>
+//             <li>
+//               <button>
+//                 <Link to="/Campus/">Campus</Link>
+//               </button>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 function AppRouter() {
   return (
@@ -35,9 +35,6 @@ function AppRouter() {
       <div>
         <nav>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
             <li>
               <Link to="/Student/">Student</Link>
             </li>

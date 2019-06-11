@@ -15,7 +15,6 @@ class Campus extends Component {
   }
   render() {
     let cards = this.state.data.map(card => (
-      <div>
         <Card
           name={card.name}
           number={card.number}
@@ -23,7 +22,6 @@ class Campus extends Component {
           description={card.description}
           work={card.work}
         />
-      </div>
     ));
     return <div className="card-container">{cards}</div>;
   }
