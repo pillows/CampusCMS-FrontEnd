@@ -15,7 +15,8 @@
 .card-image {
   object-fit: cover;
   min-width: 100%;
-  height: auto; }
+  height: auto;
+  border-radius: 10px 10px 0px 0px; }
 
 .card-container {
   display: flex;
