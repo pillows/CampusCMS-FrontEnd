@@ -25,7 +25,11 @@ class Campus extends Component {
         />
       </div>
     ));
-    return <div className="card-container">{cards}</div>;
+      return (
+          <div className="card-container-outer">
+            <div className="card-container">{cards}</div>
+          </div>
+      );
   }
 }
 
