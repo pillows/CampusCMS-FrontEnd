@@ -12,15 +12,15 @@ class StudentCard extends Component {
   render() {
     const { firstname, lastname, GPA, email, campus, img } = this.props;
     return (
-      <div class="cardbox">
+      <div className="cardbox">
         <img src={img} className="card-image" />
         <div className="card-text">
-          <h3>{firstname}</h3>
-          <h3>{lastname}</h3>
-          <h3>{GPA}</h3>
-          <h3>{email}</h3>
-          <h3>{campus}</h3>
-
+          <h3>{firstname +" "+ lastname}</h3>
+          <ul>
+            <li>{GPA}</li>
+            <li>{email}</li>
+            <li>{campus}</li>
+          </ul>
           {/* <Router>
             <Link to="/Campus">View</Link>
           </Router> */}
