@@ -1,3 +1,9 @@
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  text-align: center; }
+
 .cardbox {
   margin: 20px;
   display: flex;
@@ -11,15 +17,12 @@
   border-radius: 10px; }
   .cardbox:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
-
-.card-image {
-  object-fit: cover;
-  min-width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0px 0px; }
-
-.card-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  text-align: center; }
+  .cardbox img {
+    min-width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover; }
+  .cardbox ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px; }
