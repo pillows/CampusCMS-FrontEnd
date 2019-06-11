@@ -3,7 +3,7 @@ nav ul {
   margin: 0;
   padding: 25px;
   text-align: center;
-  background-color: aqua; }
+  background-color: #222; }
 
 nav li {
   display: inline;
@@ -19,6 +19,7 @@ nav li {
     align-content: center; }
     nav li a:hover {
       background-color: #333;
+      border-radius: 10px;
       padding: 20px 25px;
       transition: all .3s ease-in-out; }
 
