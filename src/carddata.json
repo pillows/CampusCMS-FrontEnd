@@ -1,40 +1,46 @@
 [
   {
-    "name": "West",
-    "number": "0000000000",
+    "id": 1,
+    "name": "Baruch College",
+    "address": "55 Lexington Ave, New York, NY 10010",
     "description": "gthsrhs",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
-    "work": "34425636522"
+    "students": [1, 6]
   },
+
   {
-    "name": "North",
-    "number": "1111111111",
-    "description": "arfagega",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg"
-  },
-  {
-    "name": "Thomas Hunter",
-    "number": "ghstxgrs",
-    "description": "6@gmail.com",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg"
-  },
-  {
-    "name": "West",
-    "number": "0000000000",
-    "description": "gthsrhs",
+    "id": 2,
+    "name": "Hunter College",
+    "address": "695 Park Ave, New York, NY 10065",
+    "description": "aioywfqhifbwqlf",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
-    "work": "34425636522"
+    "students": [5]
   },
+
   {
-    "name": "North",
-    "number": "1111111111",
-    "description": "arfagega",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg"
+    "id": 3,
+    "name": "City College",
+    "address": "160 Convent Ave, New York, NY 10031",
+    "description": "wioqgwinquaska",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+    "students": [4]
   },
+
   {
-    "name": "Thomas Hunter",
-    "number": "ghstxgrs",
-    "description": "6@gmail.com",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg"
+    "id": 4,
+    "name": "Lehman College",
+    "address": "250 Bedford Park Blvd W, The Bronx, NY 10468",
+    "description": "wepkfqewfqgwq",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+    "students": []
+  },
+
+  {
+    "id": 5,
+    "name": "Queens College",
+    "address": "65-30 Kissena Blvd, Flushing, NY 11367",
+    "description": "oiwqfnoqgqp oqfjso",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+    "students": [2, 3]
   }
 ]
