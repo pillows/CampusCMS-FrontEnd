@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import sdata from "../studentdata.json";
-import SpaceCard from "./SpaceCard";
+import Card from "./Card";
 
 class Campus extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class Campus extends Component {
   render() {
     let cards = this.state.data.map(card => (
       <div>
-        <SpaceCard
+        <Card
           name={card.name}
           number={card.number}
           img={card.img}
