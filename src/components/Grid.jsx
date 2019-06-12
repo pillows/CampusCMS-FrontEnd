@@ -28,7 +28,7 @@ class Grid extends Component {
         <Card
           name={campus.name}
           number={campus.number}
-          img={campus.img}
+          img={campus.imageUrl}
           description={campus.description}
           work={campus.work}
           id={campus.id}

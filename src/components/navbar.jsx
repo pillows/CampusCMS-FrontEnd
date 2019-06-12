@@ -51,8 +51,7 @@ function AppRouter() {
         </nav>
         <Route exact path="/" exact component={Home} />
         <Route exact path="/Student/" component={Students} />
-        <Route exact path="/Campus/" component={Campus} />
-        <Route exact path="/CampusListing/" component={CampusListing} />
+        <Route exact path="/Campus/" component={CampusListing} />
         <Route exact path="/viewcampus/:id" component={ViewCampus} />
       </div>
     </Router>
