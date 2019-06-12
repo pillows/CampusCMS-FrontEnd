@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Students from "../studentsdata.json";
+import StudentCard from "./StudentCard";
 
 const axios = require("axios");
 
@@ -13,8 +14,9 @@ class ViewCampus extends Component {
   }
 
   componentDidMount() {
+    const campusId = this.props.match.params.id;
     axios
-      .get(`https://campus-cms.herokuapp.com/api/campuses/1`)
+      .get(`https://campus-cms.herokuapp.com/api/campuses/${campusId}`)
       .then(res => {
         console.log(res.data);
         return res.data;
@@ -27,16 +29,19 @@ class ViewCampus extends Component {
   }
 
   render() {
-    console.log("View Campus");
-    let students = this.state.students.map(student => (
-      <div>{student.firstName}</div>
+    let cards = [];
+
+    cards = this.state.students.map(card => (
+      <StudentCard
+        firstname={card.firstName}
+        lastname={card.lastName}
+        img={card.img}
+        GPA={card.GPA}
+        email={card.email}
+      />
     ));
-    return (
-      <div>
-        helkjferf
-        {students}
-      </div>
-    );
+
+    return <div className="card-container">{cards}</div>;
   }
 }
 

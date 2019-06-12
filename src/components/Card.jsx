@@ -12,7 +12,7 @@ class Card extends Component {
 
   render() {
     const { name, number, img, description, work, id } = this.props;
-    // const viewURL = `/viewcampus/${id}`
+    const viewURL = `/viewcampus/${id}`;
     return (
       <div className="cardbox">
         <img src={img} />
@@ -23,7 +23,7 @@ class Card extends Component {
             <li>{description}</li>
             <li>{work}</li>
           </ul>
-          <Link to={"/viewcampus/"}>View</Link>
+          <Link to={viewURL}>View</Link>
         </div>
       </div>
     );
