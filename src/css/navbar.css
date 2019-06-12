@@ -41,31 +41,19 @@ button {
   button:hover {
     transition: all .4s ease-in-out; }
 
-.button-list-container ul {
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
-  justify-content: center;
-  align-items: center; }
-
-.button-list-container li {
-  float: top; }
-  .button-list-container li a {
-    display: inline;
-    color: white;
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
+.button-list-container {
+  visibility: hidden; }
+  .button-list-container ul {
+    list-style-type: none;
+    margin: 0;
     text-align: center;
-    align-content: center;
-    transition: all .4s ease-in-out; }
-    .button-list-container li a:hover {
-      border-radius: 5px;
-      transition: all .3s ease-in-out;
-      animation-delay: .2s; }
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center; }
+    .button-list-container ul li {
+      float: top; }
 
 .green {
   border-color: #3ab93a;
