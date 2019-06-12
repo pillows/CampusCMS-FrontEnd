@@ -23,7 +23,20 @@ class Card extends Component {
             <li>{description}</li>
             <li>{work}</li>
           </ul>
-          <Link to={viewURL}>View</Link>
+          <div className="button-list-container">
+            <ul>
+              <li>
+                <Link to={viewURL}>
+                  <button className="blue">View</button> </Link>
+              </li>
+              <li>
+                <button className="green">Create</button>
+              </li>
+              <li>
+                <button className="red">Delete</button>
+              </li>
+            </ul>
+        </div>
         </div>
       </div>
     );
