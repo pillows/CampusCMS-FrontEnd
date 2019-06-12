@@ -27,10 +27,9 @@ class Grid extends Component {
       <div>
         <Card
           name={campus.name}
-          number={campus.number}
+          address={campus.address}
           img={campus.imageUrl}
           description={campus.description}
-          work={campus.work}
           id={campus.id}
         />
       </div>

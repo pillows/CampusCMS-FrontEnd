@@ -2,10 +2,7 @@ import React, { Component } from "react";
 // import sdata from "../studentdata.json";
 import Card from "./Card";
 import axios from "axios";
-<<<<<<< HEAD
 import { METHODS } from "http";
-=======
->>>>>>> d91ec1538851e1b38d8d64343eae0396c9ade629
 
 class Campus extends Component {
   constructor(props) {

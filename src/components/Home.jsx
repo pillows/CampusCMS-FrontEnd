@@ -13,18 +13,15 @@ class Home extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-      <Redirect to="/Student/" component={Students} />
-=======
+      // <Redirect to="/Student/" component={Students} />
       <div>
         <div className="card-container-outer">
           <div className="card-container">
             <Grid/>
           </div>
         </div>
-        <Grid />
+        {/* <Grid /> */}
       </div>
->>>>>>> d91ec1538851e1b38d8d64343eae0396c9ade629
     );
   }
 }
