@@ -4,8 +4,19 @@
     "name": "Baruch College",
     "address": "55 Lexington Ave, New York, NY 10010",
     "description": "gthsrhs",
-    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg",
+    "number": 123,
+    "work": "adf",
+    "img": "https://i.stack.imgur.com/E31eym.gif",
+      "students": [1, 6],
+      "work": "34425636522",
+    "img": "https://i.stack.imgur.com/E31eym.gif",
     "students": [1, 6]
+  },
+  {
+    "name": "North",
+    "number": "1111111111",
+    "description": "arfagega",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hunter_College.jpg/215px-Hunter_College.jpg"
   },
 
   {

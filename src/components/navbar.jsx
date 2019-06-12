@@ -4,7 +4,13 @@ import "../css/navbar.css";
 import Home from "./Home";
 import Students from "./Students";
 import CampusListing from "./CampusListing";
+<<<<<<< HEAD
 import axios from "axios";
+=======
+import Campus from "./Campus";
+import ViewCampus from "./ViewCampus";
+import sdata from "../studentsdata.json";
+>>>>>>> d91ec1538851e1b38d8d64343eae0396c9ade629
 
 // function Index() {
 //   return (
@@ -59,9 +65,10 @@ function AppRouter() {
             </li>
           </ul>
         </nav>
-        <Route path="/" exact component={Home} />
-        <Route path="/Student/" component={Students} />
-        <Route path="/Campus/" component={CampusListing} />
+        <Route exact path="/" exact component={Home} />
+        <Route exact path="/Student/" component={Students} />
+        <Route exact path="/Campus/" component={CampusListing} />
+        <Route exact path="/viewcampus/:id" component={ViewCampus} />
       </div>
     </Router>
   );
