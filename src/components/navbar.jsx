@@ -47,10 +47,10 @@ function AppRouter() {
             </li>
           </ul>
         </nav>
-        <Route path="/" exact component={Home} />
-        <Route path="/Student/" component={Students} />
-        <Route path="/Campus/" component={CampusListing} />
-        <Route path="/viewcampus/" component={ViewCampus} />
+        <Route exact path="/" exact component={Home} />
+        <Route exact path="/Student/" component={Students} />
+        <Route exact path="/Campus/" component={CampusListing} />
+        <Route exact path="/viewcampus/" component={ViewCampus} />
       </div>
     </Router>
   );

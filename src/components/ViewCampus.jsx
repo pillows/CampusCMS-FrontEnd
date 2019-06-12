@@ -14,21 +14,29 @@ class ViewCampus extends Component {
 
   componentDidMount() {
     axios
-      .get(`https://campus-cms.herokuapp.com/campuses/1`)
+      .get(`https://campus-cms.herokuapp.com/api/campuses/1`)
       .then(res => {
-        return res.json();
+        console.log(res.data);
+        return res.data;
       })
       .then(campus => {
-        this.setState({ campus, students: campus.students });
+        this.setState({ students: campus.students }, function() {
+          console.log(this.state.students);
+        });
       });
   }
 
   render() {
     console.log("View Campus");
     let students = this.state.students.map(student => (
-      <div>{student.firstname}</div>
+      <div>{student.firstName}</div>
     ));
-    return <div>{students}</div>;
+    return (
+      <div>
+        helkjferf
+        {students}
+      </div>
+    );
   }
 }
 
