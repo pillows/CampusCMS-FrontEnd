@@ -15,12 +15,10 @@ class StudentCard extends Component {
       <div className="cardbox">
         <img src={img} className="card-image" />
         <div className="card-text">
-          <h3>{firstname +" "+ lastname}</h3>
-          <ul>
-            <li>{GPA}</li>
-            <li>{email}</li>
-            <li>{campus}</li>
-          </ul>
+          <h3>{firstname}{lastname}</h3>
+          <h3>{email}</h3>
+          <h3>{campus}</h3>
+
           {/* <Router>
             <Link to="/Campus">View</Link>
           </Router> */}

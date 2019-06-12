@@ -11,7 +11,7 @@ class Card extends Component {
   }
 
   render() {
-    const { name, number, img, description, work, id } = this.props;
+    const { name, address, img, description, work, id } = this.props;
     const viewURL = `/viewcampus/${id}`;
     return (
       <div className="cardbox">
@@ -19,7 +19,7 @@ class Card extends Component {
         <div className="card-text">
           <h3>{name}</h3>
           <ul>
-            <li>{number}</li>
+            <li>{address}</li>
             <li>{description}</li>
             <li>{work}</li>
           </ul>
