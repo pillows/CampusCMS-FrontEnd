@@ -4,6 +4,7 @@ import "../css/navbar.css";
 import Home from "./Home";
 import Students from "./Students";
 import CampusListing from "./CampusListing";
+import axios from "axios";
 
 // function Index() {
 //   return (
@@ -30,6 +31,21 @@ import CampusListing from "./CampusListing";
 // }
 
 function AppRouter() {
+
+  axios.post("https://campus-cms.herokuapp.com/api/campuses/create", {
+      name: "Baruch College",
+      address: "55 Lexington Ave, New York, NY 10010",
+      description: "This is Baruch College",
+      imageUrl: "https://www.baruch.cuny.edu/pressroom/images/pressroom-landing.png"
+    }).then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  axios.post("https://campus-cms.herokuapp.com/api/campuses/update"
+
   return (
     <Router>
       <div>
