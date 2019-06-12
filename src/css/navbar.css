@@ -1,27 +1,31 @@
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 25px;
   text-align: center;
-  background-color: #222; }
+  background-color: #222;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center; }
 
 nav li {
-  display: inline;
-  float: top; }
+  float: top;
+  margin: 25px; }
   nav li a {
     display: inline;
     color: white;
-    margin: 40px;
-    padding: 14px 16px;
+    margin: 10px;
+    padding: 20px;
     text-decoration: none;
-    transition: all .3s ease-in-out;
     text-align: center;
-    align-content: center; }
+    align-content: center;
+    transition: all .4s ease-in-out; }
     nav li a:hover {
       background-color: #333;
       border-radius: 10px;
-      padding: 20px 25px;
-      transition: all .3s ease-in-out; }
+      transition: all .3s ease-in-out;
+      animation-delay: .2s; }
 
 button {
   background-color: #333;

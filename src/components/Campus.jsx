@@ -23,7 +23,7 @@ class Campus extends Component {
   }
   render() {
     let cards = this.state.data.map(card => (
-      <div>
+      <div className="cardbox">
         <Card
           name={card.name}
           number={card.number}
@@ -33,7 +33,11 @@ class Campus extends Component {
         />
       </div>
     ));
-    return <div className="card-container">{cards}</div>;
+      return (
+          <div className="card-container-outer">
+            <div className="card-container">{cards}</div>
+          </div>
+      );
   }
 }
 

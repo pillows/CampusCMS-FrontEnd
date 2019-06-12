@@ -12,6 +12,11 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <div className="card-container-outer">
+          <div className="card-container">
+            <Grid/>
+          </div>
+        </div>
         <Grid />
       </div>
     );
