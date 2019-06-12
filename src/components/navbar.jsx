@@ -4,31 +4,33 @@ import "../css/navbar.css";
 import Home from "./Home";
 import Students from "./Students";
 import CampusListing from "./CampusListing";
+import Campus from "./Campus";
 import ViewCampus from "./ViewCampus";
+import sdata from "../studentsdata.json";
 
-function Index() {
-  return (
-    <div className="CardContainer">
-      <h2>Pages</h2>
-      <div className="wrapper wrapper-home">
-        <div className="inner-card-div">
-          <ul className="inline">
-            <li>
-              <button>
-                <Link to="/Student/">Student</Link>
-              </button>
-            </li>
-            <li>
-              <button>
-                <Link to="/Campus/">Campus</Link>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
+// function Index() {
+//   return (
+//     <div className="CardContainer">
+//       <h2>Pages</h2>
+//       <div className="wrapper wrapper-home">
+//         <div className="inner-card-div">
+//           <ul className="inline">
+//             <li>
+//               <button>
+//                 <Link to="/Student/">Student</Link>
+//               </button>
+//             </li>
+//             <li>
+//               <button>
+//                 <Link to="/Campus/">Campus</Link>
+//               </button>
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 function AppRouter() {
   return (
@@ -47,10 +49,10 @@ function AppRouter() {
             </li>
           </ul>
         </nav>
-        <Route path="/" exact component={Home} />
-        <Route path="/Student/" component={Students} />
-        <Route path="/Campus/" component={CampusListing} />
-        <Route path="/viewcampus/" component={ViewCampus} />
+        <Route exact path="/" exact component={Home} />
+        <Route exact path="/Student/" component={Students} />
+        <Route exact path="/Campus/" component={CampusListing} />
+        <Route exact path="/viewcampus/:id" component={ViewCampus} />
       </div>
     </Router>
   );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import sdata from "../studentdata.json";
+// import sdata from "../studentdata.json";
 import Card from "./Card";
+import axios from "axios";
 
 class Campus extends Component {
   constructor(props) {
@@ -11,7 +12,14 @@ class Campus extends Component {
   }
 
   componentDidMount() {
-    this.setState({ data: sdata });
+    axios
+      .get("https://campus-cms.herokuapp.com/api/campuses")
+      .then(res => {
+        return res.data;
+      })
+      .then(campuses => {
+        this.setState({ data: campuses });
+      });
   }
   render() {
     let cards = this.state.data.map(card => (
