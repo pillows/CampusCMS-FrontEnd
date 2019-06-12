@@ -36,6 +36,35 @@ nav {
 		}
 	}
 }
+@media only screen and (max-width: 600px) {
+    nav {
+        ul {
+            padding: 30px;
+		        text-align: center;
+		        background-color: $base_dark;
+		        display: flex;
+            a {
+                margin: 0px;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    nav {
+        ul {
+            padding: 5px;
+		        text-align: center;
+		        background-color: $base_dark;
+		        display: block;
+            a {
+                margin: 0px;
+                padding: 5px;
+            }
+        }
+    }
+}
 
 button {
 	background-color: $base_dark;

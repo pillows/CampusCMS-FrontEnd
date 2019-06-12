@@ -27,10 +27,10 @@ class Card extends Component {
             <ul>
               <li>
                 <Link to={viewURL}>
-                  <button className="blue">View</button> </Link>
+                  <button className="green">View</button> </Link>
               </li>
               <li>
-                <button className="green">Create</button>
+                <button className="blue">Edit</button>
               </li>
               <li>
                 <button className="red">Delete</button>
