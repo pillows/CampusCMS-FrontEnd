@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Card from "./Card.jsx";
 import cdata from "../carddata.json";
 import "../css/Card.css";
+import axios from "axios";
 
 class Grid extends Component {
   constructor(props) {
@@ -12,19 +13,27 @@ class Grid extends Component {
   }
 
   componentDidMount() {
-    this.setState({ data: cdata });
+    axios
+      .get("https://campus-cms.herokuapp.com/api/campuses")
+      .then(res => {
+        return res.data;
+      })
+      .then(campuses => {
+        this.setState({ data: campuses });
+      });
   }
-
   render() {
-    let cards = this.state.data.map(card => (
-      <Card
-        name={card.name}
-        number={card.number}
-        img={card.img}
-        description={card.description}
-        work={card.work}
-        id={card.id}
-      />
+    let cards = this.state.data.map(campus => (
+      <div>
+        <Card
+          name={campus.name}
+          number={campus.number}
+          img={campus.img}
+          description={campus.description}
+          work={campus.work}
+          id={campus.id}
+        />
+      </div>
     ));
     return <div className="card-container">{cards}</div>;
   }

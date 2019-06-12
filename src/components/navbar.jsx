@@ -4,6 +4,7 @@ import "../css/navbar.css";
 import Home from "./Home";
 import Students from "./Students";
 import CampusListing from "./CampusListing";
+import Campus from "./Campus";
 import ViewCampus from "./ViewCampus";
 import sdata from "../studentsdata.json";
 
@@ -50,7 +51,8 @@ function AppRouter() {
         </nav>
         <Route exact path="/" exact component={Home} />
         <Route exact path="/Student/" component={Students} />
-        <Route exact path="/Campus/" component={CampusListing} />
+        <Route exact path="/Campus/" component={Campus} />
+        <Route exact path="/CampusListing/" component={CampusListing} />
         <Route exact path="/viewcampus/:id" component={ViewCampus} />
       </div>
     </Router>
