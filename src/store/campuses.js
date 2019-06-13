@@ -5,12 +5,7 @@
 const GET_CAMPUSES = "GET_CAMPUSES";
 const SET_CAMPUSES = "SET_CAMPUSES";
 
-const campusList = ["Hunter", "Baruch", "Queens"];
-//students: ["Marjan", "Bob", "Barry"],
-//campuses: ["Hunter", "Baruch", "Queens"]
-
-// const axios = require("axios");
-// const Cookies = require("js-cookie");
+const campusList = [];
 
 /**
  * Action Creators
