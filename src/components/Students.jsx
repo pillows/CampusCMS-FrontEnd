@@ -25,6 +25,7 @@ class Students extends Component {
           GPA={card.GPA}
           email={card.email}
           campus={card.campus}
+          id={card.id}
         />
       </div>
     ));

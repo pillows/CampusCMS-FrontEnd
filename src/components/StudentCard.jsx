@@ -10,7 +10,7 @@ class StudentCard extends Component {
   }
 
   render() {
-    const { firstname, lastname, GPA, email, campus, img } = this.props;
+      const { firstname, lastname, GPA, email, campus, img , id } = this.props;
     return (
       <div className="cardbox">
         <img src={img} className="card-image" />
@@ -18,10 +18,20 @@ class StudentCard extends Component {
           <h3>{firstname}{lastname}</h3>
           <h3>{email}</h3>
           <h3>{campus}</h3>
-
-          {/* <Router>
-            <Link to="/Campus">View</Link>
-          </Router> */}
+          <div className="button-list-container">
+            <ul>
+              <li>
+                 {/* onclick calls one of the props  */}
+                  <button onClick="showModal" className="green">View</button>
+              </li>
+              <li>
+                <button className="blue">Edit</button>
+              </li>
+              <li>
+                <button className="red">Delete</button>
+              </li>
+            </ul>
+        </div>
         </div>
       </div>
     );

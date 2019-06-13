@@ -5,6 +5,7 @@ import Grid from "./Grid";
 import AppRouter from "./navbar";
 import CampusListing from "./CampusListing";
 import Students from "./Students";
+import  StudentModal  from "./StudentModal.jsx";
 import { connect } from "react-redux";
 import { setCampuses } from "../store/campuses";
 import { setStudents } from "../store/students";

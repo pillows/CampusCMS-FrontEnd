@@ -67,6 +67,7 @@ function AppRouter() {
         <Route exact path="/Student/" component={Students} />
         <Route exact path="/Campus/" component={CampusListing} />
         <Route exact path="/viewcampus/:id" component={ViewCampus} />
+        {/* <Route exact path="/viewstudent/:id" component={ViewStudent} /> */}
       </div>
     </Router>
   );
