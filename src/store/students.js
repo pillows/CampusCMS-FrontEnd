@@ -5,7 +5,7 @@
 const GET_STUDENTS = "GET_STUDENTS";
 const SET_STUDENTS = "SET_STUDENTS";
 
-const studentList = ["Marjan", "Bob", "Barry"];
+const studentList = [];
 //students: ["Marjan", "Bob", "Barry"],
 //campuses: ["Hunter", "Baruch", "Queens"]
 

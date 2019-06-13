@@ -23,7 +23,10 @@ class Card extends Component {
             <li>{description}</li>
             <li>{work}</li>
           </ul>
-          <Link to={viewURL}>View</Link>
+
+          <Link to={viewURL}>
+            <button>View</button>
+          </Link>
         </div>
       </div>
     );

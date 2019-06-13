@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Students from "../studentsdata.json";
 import StudentCard from "./StudentCard";
+import { connect } from "react-redux";
 
 const axios = require("axios");
 
@@ -8,7 +9,7 @@ class ViewCampus extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      campus: {},
+      campuses: {},
       students: []
     };
   }
@@ -35,7 +36,7 @@ class ViewCampus extends Component {
       <StudentCard
         firstname={card.firstName}
         lastname={card.lastName}
-        img={card.img}
+        img={card.imageUrl}
         GPA={card.GPA}
         email={card.email}
       />
@@ -45,4 +46,10 @@ class ViewCampus extends Component {
   }
 }
 
-export default ViewCampus;
+const mapState = state => {
+  return {
+    campuses: state.campuses.campuses
+  };
+};
+
+export default connect(mapState)(ViewCampus);
