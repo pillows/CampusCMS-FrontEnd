@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import StudentCard from "./StudentCard";
 import cdata from "../studentsdata.json";
 import "../css/Card.css";
+import { connect } from "react-redux";
+
 
 class Students extends Component {
   constructor(props) {
@@ -12,28 +14,40 @@ class Students extends Component {
   }
 
   componentDidMount() {
-    this.setState({ data: cdata });
+    console.log(this.props.students);
+    this.setState({ data: this.props.students }, function(){
+      console.log(this.state.data);
+    });
   }
 
   render() {
-    let cards = this.state.data.map(card => (
-      <div>
-        <StudentCard
-          firstname={card.firstname}
-          lastname={card.lastname}
-          img={card.img}
-          GPA={card.GPA}
-          email={card.email}
-          campus={card.campus}
-        />
-      </div>
-    ));
+    // let cards = this.state.data.map(card => (
+    //   <div>
+    //     <StudentCard
+    //       firstname={card.firstname}
+    //       lastname={card.lastname}
+    //       img={card.img}
+    //       GPA={card.GPA}
+    //       email={card.email}
+    //       campus={card.campus}
+    //     />
+    //   </div>
+    // ));
       return (
           <div className="card-container-outer">
-            <div className="card-container">{cards}</div>
+            {/* <div className="card-container">{cards}</div> */}
           </div>
       );
   }
 }
 
-export default Students;
+const mapState = state => {
+  return {
+    students: state.students.students
+  };
+};
+
+export default connect(
+  mapState,
+)(Students);
+
